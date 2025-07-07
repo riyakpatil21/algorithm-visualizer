@@ -1,4 +1,4 @@
-# DSA Visualizer – Simplified by Ria Patil
+# DSA Visualizer – Basic
 
 This is a beginner-focused version of the open-source [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer).  
 I customized it to focus only on fundamental algorithms like **Sorting** and **Searching**, which I’ve studied and implemented during my learning.
@@ -37,7 +37,7 @@ This project helped me:
 
 ## 👩‍💻 Maintainer
 
-**Ria Patil**  
+**Riya Patil**  
 Information Technology Engineering – 2nd Year  
 [GitHub: @riyakpatil21](https://github.com/riyakpatil21)
 
