@@ -78,6 +78,11 @@ class Navigator extends React.Component {
     const algorithmKey = algorithm && algorithm.algorithmKey;
     const gistId = scratchPaper && scratchPaper.gistId;
 
+      // ✅ Keep only beginner-friendly categories
+    const allowedCategories = ['Sorting', 'Searching', 'Tree Traversal']; // Add more if needed
+    const filteredCategories = categories.filter(cat => allowedCategories.includes(cat.name));
+
+
     return (
       <nav className={classes(styles.navigator, className)}>
         <div className={styles.search_bar_container}>
@@ -87,7 +92,7 @@ class Navigator extends React.Component {
         </div>
         <div className={styles.algorithm_list}>
           {
-            categories.map(category => {
+            filteredCategories.map(category => {
               const categoryOpened = categoriesOpened[category.key];
               let algorithms = category.algorithms;
               if (!this.testQuery(category.name)) {
